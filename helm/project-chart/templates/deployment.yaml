@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
         - name: project
-          image: vishwajithajare/project
+          image: vishwajithajare/project:{{ .Values.image.tag }}
           resources:
             limits:
               memory: '128Mi'
